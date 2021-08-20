@@ -15415,6 +15415,7 @@ var Body = {
         parentEl.object3D.getWorldQuaternion(q2);
         q1.premultiply(q2.invert());
         el.object3D.quaternion.copy(q1);
+        
 
         v.copy(body.position);
         parentEl.object3D.worldToLocal(v);
