@@ -74,7 +74,7 @@ CANNON.shape2mesh = function(body){
             break;
 
         case CANNON.Shape.types.CONVEXPOLYHEDRON:
-            var geo = new THREE.Geometry();
+            var geo = new THREE.BufferGeometry();
 
             // Add vertices
             for (var i = 0; i < shape.vertices.length; i++) {
@@ -99,7 +99,7 @@ CANNON.shape2mesh = function(body){
             break;
 
         case CANNON.Shape.types.HEIGHTFIELD:
-            var geometry = new THREE.Geometry();
+            var geometry = new THREE.BufferGeometry();
 
             var v0 = new CANNON.Vec3();
             var v1 = new CANNON.Vec3();
@@ -130,7 +130,7 @@ CANNON.shape2mesh = function(body){
             break;
 
         case CANNON.Shape.types.TRIMESH:
-            var geometry = new THREE.Geometry();
+            var geometry = new THREE.BufferGeometry();
 
             var v0 = new CANNON.Vec3();
             var v1 = new CANNON.Vec3();
